@@ -1,7 +1,7 @@
 class ProposalViewerController < ApplicationController
-  
+  layout false
+
   def show
-    render :text => "Hello!"
   end
-  
+
 end

@@ -84,3 +84,212 @@ Processing by ProposalViewerController#show as HTML
   Parameters: {"id"=>"1"}
   Rendered text template (0.0ms)
 Completed 200 OK in 20ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+  [1m[36mProposal Load (0.1ms)[0m  [1mSELECT "proposals".* FROM "proposals"[0m
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:00:12 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (2.1ms)
+Completed 200 OK in 23ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:01:28 -0500
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:01:30 -0500
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:02:38 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (1.3ms)
+Completed 200 OK in 19ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:03:57 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (1.6ms)
+Completed 200 OK in 20ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:05:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (1.4ms)
+Completed 200 OK in 20ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:05:27 -0500
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (0.2ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:07:09 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (1.3ms)
+Completed 200 OK in 19ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:07:11 -0500
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:24:20 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (1.8ms)
+Completed 200 OK in 22ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:25:49 -0500
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (0.1ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:27:33 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (1.3ms)
+Completed 200 OK in 20ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:27:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (1.4ms)
+Completed 200 OK in 19ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:27:55 -0500
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:28:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (1.3ms)
+Completed 200 OK in 19ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:28:04 -0500
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (0.1ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:28:05 -0500
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (0.1ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:28:05 -0500
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:28:05 -0500
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:28:56 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (1.3ms)
+Completed 200 OK in 20ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:29:12 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (1.4ms)
+Completed 200 OK in 21ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:29:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (1.7ms)
+Completed 200 OK in 22ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:29:45 -0500
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:29:45 -0500
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (0.2ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:29:45 -0500
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:29:46 -0500
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (0.2ms)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:29:46 -0500
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proposal_viewer/show/1" for 127.0.0.1 at 2013-07-11 16:30:30 -0500
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered proposal_viewer/show.html.haml (0.2ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
