@@ -1,9 +1,10 @@
+require "#{Rails.root}/app/services/proposal_template_render"
 class ProposalViewerController < ApplicationController
   layout false
 
   def show
-    template = "#{Rails.root}/public/proposal-template/index.html"
-    render file: template
+    text = Services::ProposalTemplateRender.render
+    render html: text
   end
 
 end

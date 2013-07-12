@@ -46,3 +46,10 @@ Processing by ProposalViewerController#show as HTML
   Parameters: {"id"=>"12"}
   Rendered proposal_viewer/show.html.haml (0.2ms)
 Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered proposal_viewer/show.html.haml (0.2ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+Processing by ProposalViewerController#show as HTML
+  Parameters: {"id"=>"12"}
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
