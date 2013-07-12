@@ -2,7 +2,10 @@ module Services
   class ProposalTemplateRender
     class << self
       def render
-        File.open(file_name, "r").readlines
+        text = File.open(file_name, "r").readlines.join("\n")
+        text.gsub!("images/", "/assets")
+        text.gsub!(%Q|<link href=\"style/style.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />|, "")
+        text
       end
 
       private
