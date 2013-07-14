@@ -17,7 +17,10 @@ module Services
 
       def replacing_attributes
         {
-          proposal_name: :name
+          proposal_name: :name,
+          proposal_send_date: :formatted_send_date,
+          client_name: :client_name,
+          proposal_user_name: :user_name
         }
       end
     end
