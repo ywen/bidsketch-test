@@ -11,10 +11,18 @@ module Presenters
       client.name
     end
 
+    def client_company
+      client.company
+    end
+
+    def client_website
+      client.website
+    end
+
     private
 
     def client
-      Client.new(model.client)
+      @client ||= Client.new(model.client)
     end
 
   end

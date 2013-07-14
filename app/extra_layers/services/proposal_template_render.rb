@@ -20,7 +20,9 @@ module Services
           proposal_name: :name,
           proposal_send_date: :formatted_send_date,
           client_name: :client_name,
-          proposal_user_name: :user_name
+          proposal_user_name: :user_name,
+          client_company: :client_company,
+          client_website: :client_website
         }
       end
     end

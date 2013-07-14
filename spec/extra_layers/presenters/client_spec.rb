@@ -5,5 +5,5 @@ describe Presenters::Client do
 
   subject { described_class.new model }
 
-  forward_from_model_attributes :name
+  forward_from_model_attributes :name, :company, :website
 end

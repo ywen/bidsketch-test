@@ -12,7 +12,9 @@ module Services
           name: "a proposal",
           formatted_send_date: "July 12, 2013",
           client_name: "a client",
-          user_name: "a proposal user"
+          user_name: "a proposal user",
+          client_company: "client company",
+          client_website: "client website"
         }
       }
       let(:presenter) { double :presenter, presenter_messages }
@@ -63,6 +65,8 @@ module Services
       it_replaces(:proposal_send_date).with(:formatted_send_date)
       it_replaces(:client_name).with(:client_name)
       it_replaces(:proposal_user_name).with(:user_name)
+      it_replaces(:client_company).with(:client_company)
+      it_replaces(:client_website).with(:client_website)
     end
   end
 
