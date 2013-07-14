@@ -1,8 +1,10 @@
+require 'fileutils'
 module Services
   class ProposalTemplateRender
     class << self
       def render(presenter)
-        text = File.open(file_name, "r").readlines.join("\n")
+        AssetsModifier.perform
+        text = FileOperation.read(FileOperation.html_file)
         text.gsub!("images/", "/assets/")
         text.gsub!(%Q|<link href=\"style/style.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />|, "")
         replacing_attributes.each do |attr, method_name|
@@ -18,9 +20,45 @@ module Services
           proposal_name: :name
         }
       end
+    end
+  end
 
-      def file_name
-        "#{Rails.root}/public/proposal-template/index.html"
+  class AssetsModifier
+    class << self
+      def perform
+        text = FileOperation.read(FileOperation.style_file)
+        text.gsub!("../images", "/assets")
+        FileOperation.write_to(FileOperation.new_style_file_location, text)
+      end
+    end
+  end
+
+  class FileOperation
+    class << self
+      def html_file
+        "#{common_root}index.html"
+      end
+
+      def read(file_name)
+        File.open(file_name, "r").readlines.join("\n")
+      end
+
+      def write_to(file_name, text)
+        File.open(file_name, "w+") {|f| f.write(text) }
+      end
+
+      def style_file
+        "#{common_root}style/style.css"
+      end
+
+      def new_style_file_location
+        "#{Rails.root}/public/copied-stylesheets/style.css"
+      end
+
+      private
+
+      def common_root
+        "#{Rails.root}/public/proposal-template/"
       end
     end
   end
