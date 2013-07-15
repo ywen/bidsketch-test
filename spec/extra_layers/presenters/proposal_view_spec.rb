@@ -27,5 +27,22 @@ module Presenters
     end
 
     it_delegates_from_client :name, :company, :website
+
+    describe "#proposal_sections" do
+      let(:proposal_section1) { double :proposal_section1 }
+      let(:proposal_section2) { double :proposal_section2 }
+
+      before(:each) do
+        model.stub(:proposal_sections).and_return [proposal_section1, proposal_section2]
+      end
+
+      it "returns an array of proposal_sections" do
+        expect(subject.proposal_sections.size).to eq(2)
+      end
+
+      it "returns them as Presenter" do
+        expect(subject.proposal_sections[0]).to be_a(Presenters::ProposalSection)
+      end
+    end
   end
 end

@@ -19,6 +19,10 @@ module Presenters
       client.website
     end
 
+    def proposal_sections
+      model.proposal_sections.map{|s| ProposalSection.new(s) }
+    end
+
     private
 
     def client

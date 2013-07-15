@@ -74,10 +74,13 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.1)
     mime-types (1.23)
+    mini_portile (0.5.1)
     minitest (4.7.5)
     model_presenter (0.1.0)
       json
     multi_json (1.7.7)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
     polyglot (0.3.3)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
@@ -172,6 +175,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   model_presenter
+  nokogiri
   rails (= 4.0.0)
   rb-fsevent
   rb-readline (~> 0.4.2)
