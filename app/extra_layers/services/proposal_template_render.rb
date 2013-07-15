@@ -6,12 +6,20 @@ module Services
       def render(presenter)
         AssetsModifier.perform
         text = FileOperation.read(FileOperation.html_file)
-        text.gsub!("images/", "/assets/")
-        text.gsub!(%Q|<link href=\"style/style.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />|, "")
+        text = StylesheetLinkModifier.perform(text)
+        text = ProposalRender.render(presenter, text)
+        Services::ProposalSectionRender.render presenter.proposal_sections, text
+      end
+    end
+  end
+
+  class ProposalRender
+    class << self
+      def render(presenter, text)
         replacing_attributes.each do |attr, method_name|
           text.gsub!("{#{attr}}", presenter.send(method_name))
         end
-        Services::ProposalSectionRender.render presenter.proposal_sections, text
+        text
       end
 
       private
@@ -25,6 +33,16 @@ module Services
           client_company: :client_company,
           client_website: :client_website
         }
+      end
+    end
+  end
+
+  class StylesheetLinkModifier
+    class << self
+      def perform(text)
+        text.gsub!("images/", "/assets/")
+        text.gsub!(%Q|<link href="style/style.css" rel="stylesheet" type="text/css" media="all" />|, "")
+        text
       end
     end
   end
