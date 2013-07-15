@@ -1,4 +1,5 @@
 require 'fileutils'
+require_relative 'proposal_section_render'
 module Services
   class ProposalTemplateRender
     class << self
@@ -10,7 +11,7 @@ module Services
         replacing_attributes.each do |attr, method_name|
           text.gsub!("{#{attr}}", presenter.send(method_name))
         end
-        text
+        Services::ProposalSectionRender.render presenter.proposal_sections, text
       end
 
       private

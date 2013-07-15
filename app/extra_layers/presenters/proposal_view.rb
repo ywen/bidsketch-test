@@ -20,7 +20,7 @@ module Presenters
     end
 
     def proposal_sections
-      model.proposal_sections.map{|s| ProposalSection.new(s) }
+      model.proposal_sections.map{|s| Presenters::ProposalSection.new(s) }
     end
 
     private
