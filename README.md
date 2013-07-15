@@ -14,7 +14,7 @@ bidsketch-test
 
 ### Design
 
-The following is not supposed to explain all the design concerns, rather something that are not found in a typical "traditional" Rails application
+The following is not supposed to explain all the design concerns, rather something that I feel worth of mentioning.
 
 - A service layer is used for business flow process, in this case, to replace the templates with the real information
 - A presenter layer is used for get the data from the database and reformat to present it. In this case, ```formatted_send_date``` is a good example
