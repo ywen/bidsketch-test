@@ -1,18 +1,17 @@
 require 'fileutils'
-
+require_relative 'proposal_section_render'
 module Services
   class ProposalTemplateRender
     class << self
       def render(presenter)
         AssetsModifier.perform
         text = FileOperation.read(FileOperation.html_file)
-        text = Services::ProposalSectionRender.render presenter.proposal_sections, text
         text.gsub!("images/", "/assets/")
         text.gsub!(%Q|<link href=\"style/style.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />|, "")
         replacing_attributes.each do |attr, method_name|
           text.gsub!("{#{attr}}", presenter.send(method_name))
         end
-        text
+        Services::ProposalSectionRender.render presenter.proposal_sections, text
       end
 
       private

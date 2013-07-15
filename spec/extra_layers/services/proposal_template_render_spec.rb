@@ -14,8 +14,7 @@ module Services
           client_name: "a client",
           user_name: "a proposal user",
           client_company: "client company",
-          client_website: "client website",
-          proposal_sections: ["1", "2"]
+          client_website: "client website"
         }
       }
       let(:presenter) { double :presenter, presenter_messages }
@@ -25,12 +24,6 @@ module Services
       before(:each) do
         File.stub(:open).and_return file
         AssetsModifier.stub(:perform)
-        ProposalSectionRender.stub(:render).and_return "text"
-      end
-
-      it "renders sections" do
-        ProposalSectionRender.should_receive(:render).with(%w(1 2), anything)
-        result
       end
 
       it "modifies the asset file" do
@@ -39,7 +32,6 @@ module Services
       end
 
       it "replaces the images/blah to assets/blah" do
-        ProposalSectionRender.stub(:render).and_return "images/blah.png"
         expect(result).to include("assets/blah.png")
       end
 
@@ -61,7 +53,7 @@ module Services
           def with(name)
             template_attr_name = @template_attr_name
             @example_group.it "replaces #{template_attr_name} with #{name}" do
-              ProposalSectionRender.stub(:render).and_return("{#{template_attr_name}}")
+              file.stub(:readlines).and_return(["{#{template_attr_name}}"])
               presenter.stub(name).and_return "some #{name}"
               expect(result).to include("some #{name}")
             end
