@@ -2,6 +2,7 @@ module Presenters
   class ProposalView
     include ModelPresenter::Base
     forward_from_model :name, :user_name
+    has_many :proposal_sections, presenter_class: Presenters::ProposalSection
 
     def formatted_send_date
       model.send_date.strftime("%B %d, %Y")
@@ -17,10 +18,6 @@ module Presenters
 
     def client_website
       client.website
-    end
-
-    def proposal_sections
-      model.proposal_sections.map{|s| Presenters::ProposalSection.new(s) }
     end
 
     private

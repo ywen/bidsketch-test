@@ -76,7 +76,7 @@ GEM
     mime-types (1.23)
     mini_portile (0.5.1)
     minitest (4.7.5)
-    model_presenter (0.1.0)
+    model_presenter (0.1.1)
       json
     multi_json (1.7.7)
     nokogiri (1.6.0)
